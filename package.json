@@ -1,6 +1,7 @@
 {
-  "name": "Scrim-s0fep06rps",
+  "name": "portfolio-site",
   "description": "https://v2.scrimba.com/s02cito?pl=p5PxYsw",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",

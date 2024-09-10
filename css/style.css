@@ -259,7 +259,7 @@ textarea {
 /* qwe */
 .home-hero {
   color: #fff;
-  background: url(../../assets/svg/common-bg2.png);
+  background: url(../assets/svg/common-bg2.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -463,7 +463,7 @@ textarea {
 }
 
 .contact {
-  background: url(../../assets/svg/common-bg2.png);
+  background: url(../assets/svg/common-bg2.png);
   background-size: cover;
   background-position: center;
 }
@@ -475,7 +475,7 @@ textarea {
       rgba(var(--main-color), 0.8),
       rgba(var(--main-color), 0.8)
     ),
-    url(../../assets/svg/common-bg.svg);
+    url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
