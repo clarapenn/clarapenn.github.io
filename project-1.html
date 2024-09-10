@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project: Quiz Game</title>
+    <meta name="description" content="Project details" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+
+          <span class="header__logo-sub">Clara Penn</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+             <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Quiz Game</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Using React, I created a multiple choice quiz that draws on an online database of questions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/img/quizzical_screenshots/quizzical_start.png"
+                alt="Screenshot of Quizzical app"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                Having completed a React fundamentals course with the online code-learning platform Scrimba, I took on their self-led solo challenge, to create a fun quiz app. Given a Figma mockup of a user interface to replicate and a list of functional requirements to fulfil, it was a demanding task that really tested my grasp of core React and JS, and flexed my CSS and HTML skills. It was as satisfying to create as it is to play and win.
+
+                Some key challenges along the way included:
+
+                <ul class="desc-bullets">
+                    <li>Meeting the requirement to load in the quiz questions and answers through a third-party API (a database of open-source trivia questions) – solved using JavaScript’s fetch API, Promises, async functions and React’s useEffect hook.
+                    </li>
+                    <li>Cleaning the source quiz data, to ensure HTML entities were properly displayed.</li>
+                    <li>Restructuring the data into a suitable format, including deciding and adding custom properties to track which answer a user had selected.</li>
+                    <li>Managing state within the app, such as tracking the user’s selected answers,  checking them at the end of the round and, naturally, starting a fresh game.
+                    </li>
+                    <li>
+                    Writing all HTML and CSS from scratch, to create a user interface that matched the Figma mockup. This included carefully tuning details like hover states for the answer buttons to ensure a clean glitch-free user experience. Plus, of course, a couple of easter eggs, including a confetti cannon when you get all the answers right!
+                    </li>
+
+                      <div class="project-details__showcase-img-cont">
+                        <img
+                          src="./assets/img/quizzical_screenshots/quizzical_results_lose.png"
+                          alt="Quizzical with one answer incorrect"
+                          class="project-details__showcase-img"
+                        />
+                      </div>
+
+                      <div class="project-details__showcase-img-cont">
+                        <img
+                          src="./assets/img/quizzical_screenshots/quizzical_results_win.png"
+                          alt="Quizzical win with confetti drop"
+                          class="project-details__showcase-img"
+                        />
+                      </div>
+
+                </p>
+
+              </div>
+              <div class="project-details__tools-used">
+                <h3 class="project-details__content-title">Tools Used</h3>
+                <div class="skills">
+                  <div class="skills__skill">JavaScript</div>
+                  <div class="skills__skill">React</div>
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">Git</div>
+                </div>
+              </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See more</h3>
+              <!-- <a
+              href="#"
+              class="btn btn--med btn--theme project-details__links-btn"
+              target="_blank"
+              >Live Link</a
+              > -->
+              <a href="https://github.com/clarapenn/react_soloproject_quizzical"
+              class="btn btn--med btn--theme-inv project-details__links-btn"
+              target="_blank">Github project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__lower">
+          &copy; Copyright 2024.
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

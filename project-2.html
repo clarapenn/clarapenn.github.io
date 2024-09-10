@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project: Meal Planner</title>
+    <meta name="description" content="Project details" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+
+          <span class="header__logo-sub">Clara Penn</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+             <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Meal Planner</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Solving my own pain while learning the Django web framework.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/img/django_meal_planner_screenshots/meal_planner_schedule.png"
+                  alt="Screenshot of main meal schedule"
+                  class="project-details__showcase-img"
+                />
+              </div>
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                It's a grinding everyday task: producing a healthy, enjoyable and varied meal every day for ourselves and our kids.
+              </p>
+              <p class="project-details__desc-para">
+                As soon as I was able, I created an online meal-scheduling tool that would speed up the thinking process and help us log, manage and get inspiration for the rotation of our family dinners.
+              </p>
+              <p class="project-details__desc-para">
+                First I built it as a basic calendar in vanilla JavaScript. It used my newfound CSS flexbox and Grid skills for the frontend, and local storage to hold the library of dishes and list of meals created for specific dates.
+              </p>
+              <p class="project-details__desc-para">
+                The next version of the planner was a full rewrite, because I used it as an excellent way to improve my understanding of  the Django web framework, practise modelling data and building out a traditional server-side CRUD app.
+              </p>
+              <p class="project-details__desc-para">
+                The core behaviour is straightforward: storing a library of Dish objects (a title and description) and the concept of a Meal object (a foreign key to a particular Dish, on a particular date, plus a notes field). A key aim, however, was for the app to be able to suggest dishes that we hadn't cooked for some time, as it's so easy to fall into a rut of repetitively cooking the same meals. With this in mind, the core features became:
+                <ul class="desc-bullets">
+                  <li>A quick way to view the current week's scheduled meals, as well as the previous and next week's plan — this involves datetime-based database queries to get the right "window" of data.</li>
+                  <li>A dynamically generated list of suggested dishes for inspiration — based on a simple algorithm that seeks the least recently selected dishes.
+                    <div class="project-details__showcase-img-cont project-details__showcase-img-cont--within-content">
+                      <img
+                        src="./assets/img/django_meal_planner_screenshots/meal_planner_suggestions.png"
+                        alt="Screenshot showing dish suggestions"
+                        class="project-details__showcase-img"
+                      />
+                    </div>
+                  </li>
+                  <li>A shortcut for adding a new meal from the main dish list - the "Plan It!" button.  This special link uses a dish-specific querystring to pre-populate the form in the "add a meal" page, so the user doesn't have to rummage around for it.</li>
+                </ul>
+              </p>
+              <p class="project-details__desc-para">
+                My focus was on utility over style, so I pulled in basic styling using the <a href="https://simplecss.org/">Simple CSS</a> framework, which let me keep my mind on the data.
+              </p>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/img/django_meal_planner_screenshots/meal_planner_edit.png"
+                  alt="Screenshot showing meal edit page"
+                  class="project-details__showcase-img"
+                />
+              </div>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Django</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Git</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See more</h3>
+              <!-- <a
+                href="#"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              > -->
+              <a
+                href="https://github.com/clarapenn/django_meal_planner/"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Github project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__lower">
+          &copy; Copyright 2024.
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
