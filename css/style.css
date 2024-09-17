@@ -262,6 +262,7 @@ textarea {
   background: url(../assets/svg/common-bg2.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
